@@ -22,5 +22,12 @@ prezzoTicket -= prezzoTicket*20/100;
     prezzoTicket -= prezzoTicket*40/100; 
 } 
 
+if (isNaN(numeroChilometri) || numeroChilometri===0){
+    alert('hai inserito un valore non errato')
+    document.getElementById('spesa').innerHTML = `Ops! c'è stato un errore riprovare.`; 
+} else{
+
 alert(`il costo del bigliotto è di €: ${prezzoTicket.toFixed(2)} euro`);
 document.getElementById('spesa').innerHTML = `il costo del bigliotto è di €: ${prezzoTicket.toFixed(2)} euro`; 
+
+}

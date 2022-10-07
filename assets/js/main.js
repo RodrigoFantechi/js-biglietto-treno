@@ -15,12 +15,12 @@ Buon viaggio e confermate lettura come al solito.*/
 
 const numeroChilometri = Number(prompt('quanti km vuoi percorrere?'));
 const etaPasseggero = Number(prompt('quanti anni hai?'));
-let prezzoTicketNonScontato = numeroChilometri*0.21;
+let prezzoTicket = numeroChilometri*0.21;
 if (etaPasseggero<18){
-prezzoTicketNonScontato -= prezzoTicketNonScontato*20/100;
+prezzoTicket -= prezzoTicket*20/100;
 } else if(etaPasseggero>65){
-    prezzoTicketNonScontato -= prezzoTicketNonScontato*40/100; 
+    prezzoTicket -= prezzoTicket*40/100; 
 } 
 
-alert(`il costo del bigliotto è di €: ${prezzoTicketNonScontato.toFixed(2)} euro`);
-document.getElementById('spesa').innerHTML = `il costo del bigliotto è di €: ${prezzoTicketNonScontato.toFixed(2)} euro`; 
+alert(`il costo del bigliotto è di €: ${prezzoTicket.toFixed(2)} euro`);
+document.getElementById('spesa').innerHTML = `il costo del bigliotto è di €: ${prezzoTicket.toFixed(2)} euro`; 
